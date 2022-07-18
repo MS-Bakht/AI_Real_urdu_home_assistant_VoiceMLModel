@@ -1,0 +1,151 @@
+<!--Front-end code structure: 
+Name: Brian
+Link: https://github.com/briancodex/html-css-js-website-smooth-scroll-->
+
+ <!--
+            Recording code credits: Mark Jivko
+            Link: https://github.com/Stephino/stephino.github.io/blob/master/tutorials/B3wWIsNHPk4/index.html
+            YT: https://youtu.be/B3wWIsNHPk4
+
+          -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Ruha</title>
+    <link rel="stylesheet" href="Homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">RUHA</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">Record Live</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="Commands.pdf" target="_blank" class="button" id="Commands" >Commands</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">R<span>U</span>HA</h1>
+        <p class="hero__description">Real <span>Urdu </span> Home Assistant</p>
+        <button class="main__btn"><a href="Commands.pdf" target="_blank">Commands</a></button>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>Test the model by giving live input!</h1>
+         <!-- <button class="main__btn" id="recordbtn"><a href="#">Start Recording</a></button>
+          <button class="main__btn" id="stoprecordbtn"><a href="#">Stop Recording</a></button>
+          <p><br></p>
+          <audio controls></audio> -->
+
+          <!--
+            Recording code credits: Mark Jivko
+            Link: https://github.com/Stephino/stephino.github.io/blob/master/tutorials/B3wWIsNHPk4/index.html
+            YT: https://youtu.be/B3wWIsNHPk4
+
+          -->
+          <div class="holder">
+            <div data-role="controls">
+              <button >Record</button>
+            </div>
+            <div data-role="recordings">
+              <div class="Ainput">
+                <input type="file"class="input_audio">
+                <input type="submit">
+              </div>
+              
+              <div class="row">
+                <audio controls></audio>
+                <a>&#9660</a> <!--Custom download arrow html-->
+              </div>
+
+              
+            </div>
+            
+          </div>
+
+
+          <h2>Output:</h2>
+          <p class="Model_Output"></p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+
+    <!-- Features Section -->
+  
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Credits</h2>
+            <a href="https://www.linkedin.com/in/shayan-bakht-84a565169/" target="_blank">Project by: Shayan Bakht</a> <a href="https://github.com/briancodex/html-css-js-website-smooth-scroll" target="_blank">Website credits: Brian</a> <a href="https://github.com/Stephino/stephino.github.io/blob/master/tutorials/B3wWIsNHPk4/index.html">Recording code: Mark Jivko</a>
+          </div>
+
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Project</h2>
+              <a >PAI Course Project</a> <a href="Commands.pdf" target="_blank">Project Commands</a>
+              <a >Machine Learning</a>
+            </div>
+          
+            <div class="footer__link--items">
+            <h2>Models</h2>
+            <a href="DecisionTree.pkl">Decision Tree</a> <a href="Knn.pkl" >KNN</a>
+            <a href="xgboost.pkl">XgBoost</a> <a href="RandomForestClassifier.pkl">RandomForest</a> <a href="AdaBoostClassifier.pkl">AdaBoost</a>
+          </div>
+        </div>
+        
+          <div class="footer__link--items">
+            <h2>Project of: AIM LAB</h2>
+            <a href="http://isb.nu.edu.pk/aim/" target="_blank">Website</a> <a href="https://www.linkedin.com/company/aim-lab/" target="_blank">Linkedin</a>
+            <a href="https://www.facebook.com/aimlabfast" target="_blank">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a  id="footer__logo">RUHA</a>
+          </div>
+          <p class="website__rights">© RUHA-ML MODEL 2021. All rights reserved</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
